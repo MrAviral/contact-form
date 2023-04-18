@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <form action="#" method="post" onsubmit="return validate()">
+      <h1>Contact Us</h1>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6LeyW5MlAAAAAICIRvv6yYokhfNdyINwx1dTuHH2"></div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
